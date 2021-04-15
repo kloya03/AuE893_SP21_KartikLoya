@@ -1,0 +1,30 @@
+<launch>
+  <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="multi_robot_name" default=""/>
+  <arg name="x_pos" default="-0.2"/>
+  <arg name="y_pos" default="1.6"/>
+  <arg name="z_pos" default="0"/>
+  <arg name="yaw_pos" default="3.14"/>
+  <arg name="x_pos2" default="0.3"/>
+  <arg name="y_pos2" default="1.6"/>
+  <arg name="z_pos2" default="0"/>
+  <arg name="yaw_pos2" default="0.0"/>
+  <!-- No namespace here as we will share this description.
+       Access with slash at the beginning -->
+
+  <!-- BEGIN ROBOT 1-->
+  <group ns="robot1">
+    <param name="tf_prefix" value="robot1_tf" />
+    <param name="robot_description1" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_burger.urdf.xacro" />
+    <arg name="robot_name"  value="Robot1" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -Y $(arg yaw_pos) -param robot_description1" />
+  </group>
+
+  <!-- BEGIN ROBOT 2-->
+  <group ns="robot2">
+    <param name="robot_description2" command="$(find xacro)/xacro --inorder $(find turtlebot3_description)/urdf/turtlebot3_burger_tag3611_01.urdf.xacro" />
+    <param name="tf_prefix" value="robot2_tf" />
+    <arg name="robot_name"  value="Robot2" />
+    <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf_apr" args="-urdf -model turtlebot3_burger_tag3611_01 -x $(arg x_pos2) -y $(arg y_pos2) -z $(arg z_pos2) -Y $(arg yaw_pos2) -param robot_description2" />
+  </group>
+</launch>

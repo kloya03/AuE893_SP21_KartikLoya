@@ -1,0 +1,8 @@
+prefix=/home/administrator/git_ws/AuE893_SP21_KartikLoya/catkin_ws/install_isolated
+
+Name: aue_finals
+Description: Description of aue_finals
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

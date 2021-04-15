@@ -1,0 +1,8 @@
+prefix=/home/administrator/git_ws/AuE893_SP21_KartikLoya/catkin_ws/devel_isolated/assignment6_trackingandfollowing
+
+Name: assignment6_trackingandfollowing
+Description: Description of assignment6_trackingandfollowing
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/administrator/git_ws/AuE893_SP21_KartikLoya/catkin_ws/install_isolated
+
+Name: assignment5_wallfollowingandobstacleavoidance
+Description: Description of assignment5_wallfollowingandobstacleavoidance
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
