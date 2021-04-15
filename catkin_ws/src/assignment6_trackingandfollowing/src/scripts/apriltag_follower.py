@@ -36,15 +36,20 @@ class Apriltag_follower(object):
             vel_msg = Twist()
 
         #the proportianal variables values
-            Kp_depth_diff = 0.3                                                 #the proportional value
-            Kp_x_diff = 1.5                                                   #the proportional value
+            Kp_depth_diff = 0.22                                                #the proportional value
+            Kp_x_diff = 1.3                                                   #the proportional value
 
         #the velocity message
-            if depth_diff < 0.1:                                                #the robot will maintain distance of 1 cm
+            if depth_diff < 0.5:                                                #the robot will maintain distance of 1 cm
                 vel_msg.linear.x = 0
-            else:
+            elif depth_diff > 0.5:
                 vel_msg.linear.x = depth_diff * Kp_depth_diff
-                vel_msg.angular.z = -1* x_diff * Kp_x_diff * abs(x_diff) * abs(x_diff)
+                vel_msg.angular.z =  -x_diff * Kp_x_diff * abs(x_diff) * abs(x_diff)
+            else:
+                vel_msg.linear.x = 0
+                vel_msg.angular.z = 0.1
+
+
             self.publish.publish(vel_msg)
 
         except IndexError:
