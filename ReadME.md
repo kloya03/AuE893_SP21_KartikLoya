@@ -58,7 +58,7 @@ This project is dependent on the following packages:
 
 2. ![Line following and stop sign detection in real](https://gfycat.com/affectionateickyhoki)
 
-3. ![AprilTag tracking in real](https://gfycat.com/shamefulidleislandwhistler)
+3. [AprilTag tracking in real](https://gfycat.com/shamefulidleislandwhistler)
 
 	
 
