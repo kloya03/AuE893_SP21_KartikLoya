@@ -56,7 +56,7 @@ This project is dependent on the following packages:
 
 3. AprilTag tracking in gazebo
 	
-	![AprilTag tracking in gazebo](https://giphy.com/media/tGV4TY5m9PdG6Ycu6H/giphy.gif)
+	![AprilTag tracking in gazebo](https://media.giphy.com/media/tGV4TY5m9PdG6Ycu6H/giphy.gif)
 
 
 ### Real World Simulation
