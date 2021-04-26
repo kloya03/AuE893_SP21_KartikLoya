@@ -46,19 +46,31 @@ This project is dependent on the following packages:
 ##  Results
 
 ### Gazebo simulation
-1. ![Wall following and obstacle avoidance in gazebo](https://media2.giphy.com/media/si6g6yiLhNC97hD4iM/giphy.gif)
+1. Wall following and obstacle avoidance in gazebo
 
-2. ![Line following and stop sign detection in gazebo](https://media1.giphy.com/media/W8vedwATymTwBeuzEl/giphy.gif)
+	![Wall following and obstacle avoidance in gazebo](https://media2.giphy.com/media/si6g6yiLhNC97hD4iM/giphy.gif)
 
-3. ![AprilTag tracking in gazebo](https://giphy.com/media/tGV4TY5m9PdG6Ycu6H/giphy.gif)
+2. Line following and stop sign detection in gazebo
+
+	![Line following and stop sign detection in gazebo](https://media1.giphy.com/media/W8vedwATymTwBeuzEl/giphy.gif)
+
+3. AprilTag tracking in gazebo
+	
+	![AprilTag tracking in gazebo](https://giphy.com/media/tGV4TY5m9PdG6Ycu6H/giphy.gif)
 
 
 ### Real World Simulation
-1. ![wall following and obstacle avoidance in real](https://media0.giphy.com/media/K16mv68PfDrX2IFCUJ/giphy.gif)
+1. wall following and obstacle avoidance in real
+	
+	![wall following and obstacle avoidance in real](https://media0.giphy.com/media/K16mv68PfDrX2IFCUJ/giphy.gif)
 
-2. ![Line following and stop sign detection in real](https://media0.giphy.com/media/5HeiJdOfLHx1OjHdyA/giphy.gif)
+2. Line following and stop sign detection in real 
+	
+	![Line following and stop sign detection in real](https://media0.giphy.com/media/5HeiJdOfLHx1OjHdyA/giphy.gif)
 
-3. ![AprilTag tracking in real](https://giphy.com/media/GZVnmHQRJpgRdRydyt/giphy.gif)
+3. AprilTag tracking in real
+	
+	![AprilTag tracking in real](https://giphy.com/media/GZVnmHQRJpgRdRydyt/giphy.gif)
 
 	
 
